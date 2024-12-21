@@ -1,0 +1,249 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+  }
+  
+  /* Home Section */
+  .home-section {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid white;
+  }
+  
+  .home-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .home-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .cta-btn {
+    background-color: #333;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #575757;
+  }
+  
+  /* About Section */
+  .about-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+  }
+  
+  .skills-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .skill-card {
+    background-color: #fff;
+    padding: 30px;
+    width: 22%;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .skill-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .skill-card ul {
+    font-size: 1.1em;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    background-color: #fff;
+    padding: 60px 20px;
+  }
+  
+  .projects-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  .project a {
+    color: #4CAF50;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .project a:hover {
+    color: #333;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input,
+  form textarea {
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer a {
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

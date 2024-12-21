@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lalit Raj Joshi - Professional Portfolio">
+  <title>Lalit Raj Joshi - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header with Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="intro">
+      <img src="images/lalit.png" alt="Lalit Raj Joshi" class="profile-img">
+      <h1>Hi, I'm Lalit Raj Joshi</h1>
+      <p>A passionate Web Developer with a focus on building innovative and impactful web applications.</p>
+      <a href="#projects" class="cta-btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>I am a dedicated web developer with a deep passion for coding and problem-solving. I have over [X] years of experience in building scalable and efficient web applications using modern web technologies like React, Node.js, and Django. I am constantly improving my skills and exploring new technologies to enhance my development toolkit.</p>
+    <p>Outside of work, I enjoy learning about AI, working on personal projects, and contributing to open-source software.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill-card">
+        <h3>Frontend</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Vue.js</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Backend</h3>
+        <ul>
+          <li>Node.js, Express</li>
+          <li>Django, Flask</li>
+          <li>APIs & RESTful Services</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <ul>
+          <li>MySQL, PostgreSQL</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>DevOps</h3>
+        <ul>
+          <li>Docker, Kubernetes</li>
+          <li>CI/CD</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>Featured Projects</h2>
+    <div class="project">
+      <h3>Project 1: E-Commerce Web App</h3>
+      <p>A fully functional e-commerce web app built with React and Node.js, allowing users to browse and purchase items securely.</p>
+      <a href="https://github.com/Lalitrajjoshi/e-commerce" target="_blank">View on GitHub</a> | <a href="https://live-demo.com" target="_blank">Live Demo</a>
+    </div>
+    <div class="project">
+      <h3>Project 2: Portfolio Website</h3>
+      <p>This is the portfolio website you're currently viewing! It was built using HTML, CSS, and JavaScript, demonstrating my front-end skills.</p>
+      <a href="https://github.com/Lalitrajjoshi/portfolio-website" target="_blank">View on GitHub</a> | <a href="https://lalitrajjoshi.com" target="_blank">Live Demo</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form id="contact-form" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Lalit Raj Joshi. All Rights Reserved.</p>
+    <p>
+      <a href="https://np.linkedin.com/in/lalitrajjoshi" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/Lalitrajjoshi" target="_blank">GitHub</a> |
+      <a href="mailto:lalitrajjoshi0@gmail.com">Email</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
