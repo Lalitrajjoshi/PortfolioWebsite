@@ -1,20 +1,3 @@
-// Simple form validation for contact form
-function validateForm() {
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
-    
-    if (name === "" || email === "" || message === "") {
-      alert("Please fill out all fields before submitting.");
-      return false;
-    }
-    
-    alert("Your message has been sent successfully!");
-    return true;
-  }
-
-
-
 // Smooth Scroll for Navigation Links
 document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -31,22 +14,22 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Basic Form Validation Alert
+// Contact Form Validation
 function validateForm() {
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
 
   if (name === "" || email === "" || message === "") {
     alert("Please fill in all fields before submitting.");
     return false;
   }
 
-  alert("Thank you for your message, " + name + "!");
+  alert("Thank you, " + name + "! Your message has been sent successfully.");
   return true;
 }
 
-// Optional: Highlight current section in navbar while scrolling
+// Highlight current section in navbar on scroll
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
 
@@ -54,8 +37,9 @@ window.addEventListener("scroll", () => {
   let current = "";
 
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100;
-    if (pageYOffset >= sectionTop) {
+    const sectionTop = section.offsetTop - 120; // Adjust if needed
+    const sectionHeight = section.clientHeight;
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
       current = section.getAttribute("id");
     }
   });
