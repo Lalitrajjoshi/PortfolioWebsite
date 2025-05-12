@@ -20,12 +20,12 @@ function validateForm() {
   const email = document.getElementById("email").value.trim();
   const message = document.getElementById("message").value.trim();
 
-  if (name === "" || email === "" || message === "") {
+  if (!name || !email || !message) {
     alert("Please fill in all fields before submitting.");
     return false;
   }
 
-  alert("Thank you, " + name + "! Your message has been sent successfully.");
+  alert(`Thank you, ${name}! Your message has been sent successfully.`);
   return true;
 }
 
@@ -34,19 +34,21 @@ const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
 
 window.addEventListener("scroll", () => {
-  let current = "";
+  let currentSectionId = "";
 
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 120; // Adjust if needed
-    const sectionHeight = section.clientHeight;
-    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-      current = section.getAttribute("id");
+    const sectionTop = section.offsetTop - 150; // Buffer to detect section earlier
+    const sectionHeight = section.offsetHeight;
+
+    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+      currentSectionId = section.getAttribute("id");
     }
   });
 
   navLinks.forEach(link => {
     link.classList.remove("active");
-    if (link.getAttribute("href") === "#" + current) {
+
+    if (link.getAttribute("href") === `#${currentSectionId}`) {
       link.classList.add("active");
     }
   });
