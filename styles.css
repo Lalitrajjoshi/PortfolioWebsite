@@ -269,4 +269,12 @@
   color: #007BFF;
 }
 
+
+nav ul li a.active {
+  font-weight: bold;
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
+}
+
+
   
