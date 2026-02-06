@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes | MBA Portfolio</title>
+    <meta name="description" content="Access admin-approved MBA notes and share resources via the public submission form.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header><!-- Content injected by script.js --></header>
+
+    <main>
+        <section id="notes-access" class="container">
+            <h2>Approved MBA Notes & Resources</h2>
+            <p style="text-align: center; margin-bottom: 40px;">
+                These notes are publicly available, curated resources for students and professionals. New submissions require admin approval before publication.
+            </p>
+            
+            <!-- Notes Loaded Dynamically by script.js -->
+            <div id="notes-container" class="grid-3">
+                <p style="grid-column: 1 / -1; text-align: center;">Loading resources...</p>
+            </div>
+        </section>
+
+        <section id="public-upload" class="container" style="background-color: var(--color-card-bg); padding: 50px 20px;">
+            <h2 style="color: var(--color-text-light);">Contribute: Public Resource Submission</h2>
+            <p style="text-align: center; margin-bottom: 30px; color: #a8b2d1;">
+                Share your valuable notes, case summaries, or articles. All submissions are reviewed by the admin (Jane Doe) before being published to the Notes Access section.
+            </p>
+
+            <!-- Embedded Google Form for File Upload -->
+            <iframe 
+                class="google-form-embed" 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSf41e8l7xK_J_sE3bA3XyZ8p8-vN3qO7o0qBw/viewform?embedded=true" 
+                title="Public Note Submission Form">
+                Loading Google Form...
+            </iframe>
+
+            <p style="margin-top: 20px; text-align: center; font-size: 0.8rem; color: #8892b0;">
+                *Note: This is a placeholder embed link. Replace the `src` with your actual Google Form link configured for file uploads to Google Drive.*
+            </p>
+        </section>
+    </main>
+
+    <footer><!-- Content injected by script.js --></footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

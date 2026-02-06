@@ -1,136 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Lalit Raj Joshi - Professional Portfolio"/>
-  <title>Lalit Raj Joshi - Portfolio</title>
-  <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | MBA Portfolio</title>
+    <meta name="description" content="Professional portfolio website of an MBA graduate specializing in Strategic Management and Business Analytics.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header with Navigation -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resources">Downloads</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header><!-- Content injected by script.js --></header>
 
-  <!-- Home Section -->
-  <section id="home" class="home-section">
-    <div class="intro">
-      <img src="images/lalit.jpeg" alt="Lalit Raj Joshi" class="profile-img"/>
-      <h1>Hi, I'm Lalit Raj Joshi</h1>
-      <p>A passionate Web Developer with a focus on building innovative and impactful web applications.</p>
-      <a href="#projects" class="cta-btn">View My Work</a>
-    </div>
-  </section>
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <p style="font-size: 1.2rem; color: var(--color-hover-accent);">Welcome to the Professional Hub</p>
+                <h1>Lalit Raj Joshi, MBA Candidate</h1>
+                <h2>Strategic Management & Business Analytics Specialist</h2>
+                <div class="hero-actions">
+                    <a href="resume.html" class="btn btn-primary">View Resume</a>
+                    <a href="notes.html" class="btn">Access Notes & Resources</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Quick Navigation / Overview Section -->
+        <section id="overview">
+            <div class="container">
+                <h2>Quick Portfolio Navigation</h2>
+                <div class="grid-3">
+                    <a href="about.html" class="card overview-card">
+                        <h3><i class="fas fa-user-tie"></i> About Me</h3>
+                        <p>Detailed professional summary, education, and career objectives.</p>
+                    </a>
+                    <a href="projects.html" class="card overview-card">
+                        <h3><i class="fas fa-chart-line"></i> Key Projects</h3>
+                        <p>Showcase of MBA capstones, case studies, and analytical solutions.</p>
+                    </a>
+                    <a href="publications.html" class="card overview-card">
+                        <h3><i class="fas fa-file-alt"></i> Publications</h3>
+                        <p>Access articles, research papers, and thought leadership blogs.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <!-- About Me Section -->
-  <section id="about" class="about-section">
-    <h2>About Me</h2>
-    <p>I am a dedicated web developer with a deep passion for coding and problem-solving. I have over Two years of experience in building scalable and efficient web applications using modern web technologies like React, Node.js, and Django. I am constantly improving my skills and exploring new technologies to enhance my development toolkit.</p>
-    <p>Outside of work, I enjoy learning about AI, working on personal projects, and contributing to open-source software.</p>
-  </section>
+    <footer><!-- Content injected by script.js --></footer>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills-section">
-    <h2>Skills</h2>
-    <div class="skills-list">
-      <div class="skill-card">
-        <h3>Frontend</h3>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>React, Vue.js</li>
-          <li>Responsive Design</li>
-        </ul>
-      </div>
-      <div class="skill-card">
-        <h3>Backend</h3>
-        <ul>
-          <li>Node.js, Express</li>
-          <li>Django, Flask</li>
-          <li>APIs & RESTful Services</li>
-        </ul>
-      </div>
-      <div class="skill-card">
-        <h3>Databases</h3>
-        <ul>
-          <li>MySQL, PostgreSQL</li>
-          <li>MongoDB</li>
-        </ul>
-      </div>
-      <div class="skill-card">
-        <h3>DevOps</h3>
-        <ul>
-          <li>Docker, Kubernetes</li>
-          <li>CI/CD</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section">
-    <h2>Featured Projects</h2>
-    <div class="project">
-      <h3>Project 1: E-Commerce Web App</h3>
-      <p>A fully functional e-commerce web app built with React and Node.js, allowing users to browse and purchase items securely.</p>
-      <a href="https://github.com/Lalitrajjoshi/e-commerce" target="_blank">View on GitHub</a> |
-      <a href="https://live-demo.com" target="_blank">Live Demo</a>
-    </div>
-    <div class="project">
-      <h3>Project 2: Portfolio Website</h3>
-      <p>This is the portfolio website you're currently viewing! It was built using HTML, CSS, and JavaScript, demonstrating my front-end skills.</p>
-      <a href="https://github.com/Lalitrajjoshi/portfolio-website" target="_blank">View on GitHub</a> |
-      <a href="https://lalitrajjoshi.com" target="_blank">Live Demo</a>
-    </div>
-  </section>
-
-  <!-- Downloads & Resources Section -->
-  <section id="resources" class="resources-section">
-    <h2>Downloads & Resources</h2>
-    <p>You can view or download my latest resume and other documents from the links below:</p>
-    <ul>
-      <li><a href="https://drive.google.com/drive/folders/19lbHadHPac8tgc4ex7Ds8RsuCFjbZoAj?usp=drive_link" target="_blank" class="resource-link">📄 Download</a></li>
-      
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <h2>Contact Me</h2>
-    <form id="contact-form" onsubmit="return validateForm()">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2024 Lalit Raj Joshi. All Rights Reserved.</p>
-    <p>
-      <a href="https://np.linkedin.com/in/lalitrajjoshi" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/Lalitrajjoshi" target="_blank">GitHub</a> |
-      <a href="mailto:admin@lalitrajjoshi.com.np">Email</a>
-    </p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
