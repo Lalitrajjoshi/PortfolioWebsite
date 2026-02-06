@@ -22,7 +22,82 @@
             
             <!-- Notes Loaded Dynamically by script.js -->
             <div id="notes-container" class="grid-3">
-                <p style="grid-column: 1 / -1; text-align: center;">Loading resources...</p>
+                <div style="grid-column: 1 / -1; text-align: center; padding: 20px;">
+
+  <!-- Satellite dish -->
+  <div style="
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+  ">
+    <!-- Dish base -->
+    <div style="
+      width: 20px;
+      height: 20px;
+      background: #3498db;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    "></div>
+
+    <!-- Signal waves -->
+    <div style="
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border: 2px solid #3498db;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      animation: wave 1.5s infinite;
+    "></div>
+
+    <div style="
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border: 2px solid #3498db;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      animation: wave 1.5s infinite;
+      animation-delay: 0.5s;
+    "></div>
+
+    <div style="
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border: 2px solid #3498db;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      animation: wave 1.5s infinite;
+      animation-delay: 1s;
+    "></div>
+  </div>
+
+  <p style="font-weight: 500; color: #444;">
+    Connecting to source...
+  </p>
+</div>
+
+<style>
+@keyframes wave {
+  0% {
+    transform: scale(0.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+</style>
+
             </div>
         </section>
 
