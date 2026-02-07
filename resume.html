@@ -4,47 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | MBA Portfolio</title>
-    <meta name="description" content="View and download the professional resume of MBA graduate Jane Doe.">
+    <meta name="description" content="View the professional resume of Lalit Raj Joshi.">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Inline animations -->
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <header><!-- Content injected by script.js --></header>
+<header><!-- Injected by script.js --></header>
 
-    <main>
-        <section id="resume" class="container resume-section">
-            <h2>Professional Resume & CV</h2>
-            <p>You can view the full CV below or download a copy for offline access.</p>
-            
-            <!-- PDF Download Button -->
-            <a href="/assets/docs/Jane_Doe_MBA_Resume.pdf" download="Jane_Doe_MBA_Resume.pdf" class="btn btn-primary" style="font-size: 1.1rem;">
-                <i class="fas fa-download"></i> Download Resume (PDF)
-            </a>
-            <p style="margin-top: 15px; font-size: 0.9rem; color: #8892b0;">
-                *Note: Please replace the `href` with the actual path to your resume PDF file.*
-            </p>
+<main>
+    <section id="resume" class="container resume-section" style="text-align:center; padding:60px 20px;">
+        <h2>Professional Resume</h2>
+        <p style="margin-bottom:25px; color:#666;">
+            View the full resume in an interactive preview.
+        </p>
 
-            <!-- Inline Resume Preview -->
-            <div class="pdf-preview-wrapper">
-                <h3>Inline Preview</h3>
-                <!-- Placeholder for actual PDF -->
-                <iframe 
-                    class="pdf-preview" 
-                    src="https://docs.google.com/document/d/e/2PACX-1vT-9yG_2xY_fL3E_q8Wq1_6K_gK9-L0p7lP2_dOQ4I8H-y_Q/pub?embedded=true" 
-                    allowfullscreen
-                    title="MBA Resume Preview">
-                </iframe>
-                <p style="margin-top: 15px; font-size: 0.8rem; color: #8892b0;">
-                    *This uses a Google Docs embed placeholder. Use an actual PDF viewer/embed or Google Drive link for your document.*
-                </p>
-            </div>
-        </section>
-    </main>
+        <!-- View Resume Button -->
+        <button
+            onclick="document.getElementById('resumeModal').style.display='flex'"
+            style="
+                font-size: 1.1rem;
+                padding: 12px 28px;
+                background: linear-gradient(135deg, #3b82f6, #2563eb);
+                color: white;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            "
+            onmouseover="this.style.transform='translateY(-3px) scale(1.03)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'"
+        >
+            <i class="fas fa-eye"></i> View Resume
+        </button>
+    </section>
+</main>
 
-    <footer><!-- Content injected by script.js --></footer>
+<!-- Resume Modal -->
+<div id="resumeModal"
+    style="
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.75);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        animation: fadeIn 0.4s ease;
+    "
+    onclick="this.style.display='none'"
+>
+    <div
+        style="
+            width: 85%;
+            height: 90%;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            animation: slideUp 0.4s ease;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+        "
+        onclick="event.stopPropagation()"
+    >
+        <!-- Close button -->
+        <span
+            onclick="document.getElementById('resumeModal').style.display='none'"
+            style="
+                position: absolute;
+                top: 12px;
+                right: 18px;
+                font-size: 28px;
+                cursor: pointer;
+                color: #333;
+                z-index: 2;
+                font-weight: bold;
+            "
+        >&times;</span>
 
-    <script src="assets/js/script.js"></script>
+        <!-- PDF Viewer -->
+        <iframe
+            src="assets/docs/LalitRajJoshiResume.pdf"
+            title="Resume Preview"
+            style="width:100%; height:100%; border:none;">
+        </iframe>
+    </div>
+</div>
+
+<footer><!-- Injected by script.js --></footer>
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
