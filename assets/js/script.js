@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const footerTemplate = `
         <div class="container">
             <ul class="social-links">
-                <li><a href="https://linkedin.com/in/janedoe" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/janedoe" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-                <li><a href="mailto:jane.doe.mba@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
-                <li><a href="https://facebook.com/janedoe" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://instagram.com/janedoe" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/lalitrajjoshi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Lalitrajjoshi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><a href="mailto:admin@lalitrajjoshi.com.np" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://www.facebook.com/lalitrajjoshi4" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/imlrj4" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
             </ul>
             <p>&copy; ${new Date().getFullYear()} ${portfolioOwner}. All Rights Reserved. | ${specialization}</p>
         </div>
