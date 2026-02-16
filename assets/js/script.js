@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li><a href="https://www.facebook.com/lalitrajjoshi4" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/imlrj4" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
             </ul>
-            <p>&copy; ${new Date().getFullYear()} ${portfolioOwner}. All Rights Reserved. | ${specialization}</p>
+            <p>&copy; ${new Date().getFullYear()} ${portfolioOwner}. All Rights Reserved.  |  ${specialization}</p>
         </div>
     `;
 
