@@ -1,0 +1,148 @@
+{
+    "projects":  [
+                     {
+                         "id":  1,
+                         "title":  "Financial Valuation of a Tech Unicorn",
+                         "category":  "Corporate Finance",
+                         "focus":  "Valuation \u0026 M\u0026A",
+                         "year":  "2025",
+                         "featured":  true,
+                         "tools":  [
+                                       "MS Excel",
+                                       "Python",
+                                       "Bloomberg Terminal"
+                                   ],
+                         "summary":  "Built a DCF and relative valuation model for a Series E SaaS firm, stress-testing key drivers such as churn, CAC, and margin expansion.",
+                         "impact":  "Delivered an acquisition range with sensitivity scenarios and a board-ready investment memo.",
+                         "tags":  [
+                                      "DCF",
+                                      "Comparable Analysis",
+                                      "Deal Modeling"
+                                  ],
+                         "reportUrl":  "assets/docs/Group 3 Finance.pptx"
+                     },
+                     {
+                         "id":  2,
+                         "title":  "Global Market Entry Strategy (APAC)",
+                         "category":  "Growth Strategy",
+                         "focus":  "Market Entry",
+                         "year":  "2025",
+                         "featured":  true,
+                         "tools":  [
+                                       "Porter\u0027s Five Forces",
+                                       "PESTLE",
+                                       "Qualtrics"
+                                   ],
+                         "summary":  "Designed a go-to-market plan for a European luxury brand across five APAC markets, mapping pricing corridors, channel mix, and launch sequencing.",
+                         "impact":  "Recommended a phased rollout prioritizing Singapore and Australia with localization playbooks.",
+                         "tags":  [
+                                      "Market Sizing",
+                                      "Go-to-Market",
+                                      "Competitive Analysis"
+                                  ]
+                     },
+                     {
+                         "id":  3,
+                         "title":  "Supply Chain Resilience \u0026 Risk Modeling",
+                         "category":  "Operations",
+                         "focus":  "Resilience Modeling",
+                         "year":  "2024",
+                         "featured":  true,
+                         "tools":  [
+                                       "R",
+                                       "AnyLogic",
+                                       "Risk Simulation"
+                                   ],
+                         "summary":  "Created a digital twin of a manufacturing supply chain to quantify exposure to geopolitical and climate shocks.",
+                         "impact":  "Proposed dual-sourcing strategies that reduced single-point failure risk by 40% while maintaining target cost levels.",
+                         "tags":  [
+                                      "Scenario Planning",
+                                      "Optimization",
+                                      "Risk Management"
+                                  ]
+                     },
+                     {
+                         "id":  4,
+                         "title":  "Ethical AI Governance Framework",
+                         "category":  "Technology Strategy",
+                         "focus":  "Risk \u0026 Compliance",
+                         "year":  "2024",
+                         "featured":  false,
+                         "tools":  [
+                                       "Policy Analysis",
+                                       "GDPR",
+                                       "Stakeholder Interviews"
+                                   ],
+                         "summary":  "Built a governance framework for deploying ML models in customer-facing workflows, covering oversight, bias testing, and auditability.",
+                         "impact":  "Delivered a compliance-ready policy blueprint and model monitoring checklist.",
+                         "tags":  [
+                                      "AI Governance",
+                                      "Regulatory Review",
+                                      "Trust \u0026 Safety"
+                                  ]
+                     },
+                     {
+                         "id":  5,
+                         "title":  "Pricing Optimization for Multi-Category Retail",
+                         "category":  "Business Analytics",
+                         "focus":  "Revenue Optimization",
+                         "year":  "2024",
+                         "featured":  false,
+                         "tools":  [
+                                       "Tableau",
+                                       "Excel Solver",
+                                       "SQL"
+                                   ],
+                         "summary":  "Analyzed elasticity and basket behavior to recommend price tiers and promotional cadence across 12 product categories.",
+                         "impact":  "Outlined a pricing roadmap projected to lift gross margin by 3.2% while protecting volume targets.",
+                         "tags":  [
+                                      "Elasticity",
+                                      "KPI Design",
+                                      "Pricing Strategy"
+                                  ]
+                     },
+                     {
+                         "id":  6,
+                         "title":  "Customer Segmentation \u0026 CLV Forecasting",
+                         "category":  "Marketing Analytics",
+                         "focus":  "Customer Intelligence",
+                         "year":  "2023",
+                         "featured":  false,
+                         "tools":  [
+                                       "Python",
+                                       "Power BI",
+                                       "Cohort Analysis"
+                                   ],
+                         "summary":  "Segmented high-value customers for a subscription business and modeled lifetime value across acquisition cohorts.",
+                         "impact":  "Informed retention campaigns targeting top-tier segments with a projected 18% churn reduction.",
+                         "tags":  [
+                                      "Segmentation",
+                                      "CLV",
+                                      "Retention"
+                                  ]
+                     },
+                     {
+                         "id":  7,
+                         "title":  "Somtu Wellness Club Website",
+                         "category":  "Web Development",
+                         "focus":  "Community Wellness",
+                         "year":  "2026",
+                         "featured":  false,
+                         "tools":  [
+                                       "HTML",
+                                       "CSS",
+                                       "JavaScript"
+                                   ],
+                         "summary":  "A website built for Somtu Wellness Club that promotes wellness activities, community engagement, and provides information about programs, team members, and events.",
+                         "impact":  "Introduces a clean digital hub for members to discover programs and upcoming events.",
+                         "tags":  [
+                                      "Website",
+                                      "Community",
+                                      "Wellness"
+                                  ],
+                         "previewPath":  "SomtuWellnessClub/index.html",
+                         "previewLabel":  "View Project",
+                         "type":  "Web Development Project"
+                     }
+                 ]
+}

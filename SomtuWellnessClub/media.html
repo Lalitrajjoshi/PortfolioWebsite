@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SOMTU Wellness Club | Media</title>
+  <meta name="description" content="Watch guided wellness sessions and leadership mindfulness videos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="page">
+  <div class="scroll-progress"><span id="scrollProgress"></span></div>
+  <div class="page-transition"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">SOMTU Wellness Club</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="team.html">Our Team</a>
+        <a class="active" href="media.html">Media</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container">
+        <span class="pill">YouTube and media</span>
+        <h1 class="hero-title" data-reveal>Guided wellness media for focused MBA leadership.</h1>
+        <p class="section-subtitle" data-reveal>
+          Watch short practices, leadership reflections, and campus wellness highlights.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-row" data-filter-group="media">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="mindfulness">Mindfulness</button>
+          <button class="filter-btn" data-filter="leadership">Leadership</button>
+          <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+
+        <div class="media-grid">
+          <div class="card media-card" data-filter-item="media" data-category="mindfulness" data-reveal>
+            <iframe src="https://www.youtube.com/embed/inpok4MKVLM" title="Mindfulness session" loading="lazy" allowfullscreen></iframe>
+            <h3 class="mt-4">10-minute mindful reset</h3>
+          </div>
+          <div class="card media-card" data-filter-item="media" data-category="leadership" data-reveal>
+            <iframe src="https://www.youtube.com/embed/6p_yaNFSYao" title="Leadership wellness" loading="lazy" allowfullscreen></iframe>
+            <h3 class="mt-4">Leadership calm under pressure</h3>
+          </div>
+          <div class="card media-card" data-filter-item="media" data-category="events" data-reveal>
+            <iframe src="https://www.youtube.com/embed/86m4RC_ADEY" title="Campus wellness event" loading="lazy" allowfullscreen></iframe>
+            <h3 class="mt-4">Campus wellness highlights</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="assets/main.js"></script>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <strong class="footer-logo">Wellness Club</strong>
+      <p>Wellness Club is a community dedicated to improving physical, mental, and emotional well-being through events, programs, and collaboration.</p>
+      <div class="social-row" aria-label="Social media">
+        <a href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M14 8h2V5h-2c-2.2 0-4 1.8-4 4v2H8v3h2v6h3v-6h2.2l.8-3H13V9c0-.6.4-1 1-1Z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.instagram.com" aria-label="Instagram" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm5 5.5A3.5 3.5 0 1 0 12 16a3.5 3.5 0 0 0 0-7ZM17.5 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+        <a href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M4 8h3v12H4zM5.5 4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM10 8h3v1.7c.5-.9 1.6-2 3.6-2 2.4 0 4.4 1.6 4.4 5v7.3h-3v-6.5c0-1.6-.6-2.7-2.1-2.7-1.1 0-1.8.8-2.1 1.5-.1.3-.1.7-.1 1.1v6.6h-3z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.youtube.com" aria-label="YouTube" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M22 12s0-4-1-5-5-1-9-1-8 0-9 1-1 5-1 5 0 4 1 5 5 1 9 1 8 0 9-1 1-5 1-5Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 9l5 3-5 3V9z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="resources.html">Programs / Services</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Team Batches</h4>
+      <ul>
+        <li><a href="team.html#founder-batch">Founder Batch</a></li>
+        <li><a href="team.html#batch-2026">2026 Batch</a></li>
+        <li><a href="team.html#future-batches">Future Batches</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-contact">
+        <li>
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2c3.9 0 7 3.1 7 7 0 5.2-7 13-7 13S5 14.2 5 9c0-3.9 3.1-7 7-7Z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9" r="2.5" fill="currentColor"/></svg>
+          </span>
+          Kathmandu, Nepal
+        </li>
+        <li>
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </span>
+          wellnessclub@somtu.edu
+        </li>
+        <li>
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M6.5 3h3l1 5-2.2 1.3a11 11 0 0 0 5.4 5.4L15 12l5 1v3c0 1.1-.9 2-2 2-8 0-14-6-14-14 0-1.1.9-2 2-2Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </span>
+          +977 01 555 1234
+        </li>
+        <li>
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </span>
+          Sun-Fri 9:00-18:00
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>Subscribe for wellness tips and event updates.</p>
+      <form class="footer-newsletter" aria-label="Newsletter subscription">
+        <input type="email" placeholder="Email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="footer-mini-map">
+        <iframe
+          title="Wellness Club Map"
+          src="https://maps.google.com/maps?q=Kathmandu%20Nepal&t=&z=12&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>(c) 2026 Wellness Club. All rights reserved.</span>
+      <span>Designed & Developed by Lalit</span>
+    </div>
+  </div>
+</footer>
+<button class="scroll-top" aria-label="Scroll to top">Top</button>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
