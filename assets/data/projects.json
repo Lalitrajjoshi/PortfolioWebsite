@@ -140,8 +140,8 @@
                                       "Community",
                                       "Wellness"
                                   ],
-                         "previewPath":  "SomtuWellnessClub/index.html",
-                         "previewLabel":  "View Project",
+                         "reportUrl":  "SomtuWellnessClub/index.html",
+                         "reportLabel":  "View Full Screen",
                          "type":  "Web Development Project"
                      }
                  ]

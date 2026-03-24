@@ -328,11 +328,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 const summary = document.createElement('p');
                 summary.textContent = normalizeText(project.summary) || 'Project summary coming soon.';
 
-                const impact = document.createElement('p');
-                const impactLabel = document.createElement('strong');
-                impactLabel.textContent = 'Impact: ';
-                impact.appendChild(impactLabel);
-                impact.append(normalizeText(project.impact) || 'Impact highlights coming soon.');
+                const impactText = normalizeText(project.impact);
+                let impact = null;
+                if (impactText) {
+                    impact = document.createElement('p');
+                    const impactLabel = document.createElement('strong');
+                    impactLabel.textContent = 'Impact: ';
+                    impact.appendChild(impactLabel);
+                    impact.append(impactText);
+                }
 
                 const meta = document.createElement('div');
                 meta.className = 'project-meta';
@@ -366,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     reportLink.target = '_blank';
                     reportLink.rel = 'noopener';
                     reportLink.className = 'btn';
-                    reportLink.textContent = 'View Report';
+                    reportLink.textContent = normalizeText(project.reportLabel) || 'View Report';
                     actions.appendChild(reportLink);
                 }
 
@@ -382,7 +386,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.appendChild(badges);
                 card.appendChild(title);
                 card.appendChild(summary);
-                card.appendChild(impact);
+                if (impact) {
+                    card.appendChild(impact);
+                }
                 if (meta.childElementCount > 0) {
                     card.appendChild(meta);
                 }
@@ -474,8 +480,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 });
-
-
 
 
 
