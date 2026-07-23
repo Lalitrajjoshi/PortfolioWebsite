@@ -146,9 +146,9 @@
                      },
                      {
                          "id":  8,
-                         "title":  "MS Logistics Corporate Website",
+                         "title":  "MS Logistics Premium Corporate Website",
                          "category":  "Web Development",
-                         "focus":  "Logistics & Freight Services",
+                         "focus":  "Logistics & Supply Chain",
                          "year":  "2026",
                          "featured":  true,
                          "tools":  [
@@ -167,7 +167,7 @@
                                       "Business"
                                   ],
                          "reportUrl":  "MSLogistics/MS-Logistics-main/index.html",
-                         "reportLabel":  "View Full Screen",
+                         "reportLabel":  "View Live Website (New Tab)",
                          "previewPath":  "MSLogistics/MS-Logistics-main/index.html",
                          "previewLabel":  "Quick Preview",
                          "type":  "Web Development Project"
