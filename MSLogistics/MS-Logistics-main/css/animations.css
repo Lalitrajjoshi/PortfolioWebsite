@@ -1,0 +1,245 @@
+/* ============================================
+   MS Logistics — Animations Stylesheet
+   ============================================ */
+
+/* --- Keyframes --- */
+@keyframes rippleEffect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes logoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes floatShape {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: var(--color-accent);
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pageTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* --- Initial Hidden States --- */
+.reveal,
+.reveal-left,
+.reveal-right,
+.fade-up {
+  opacity: 0;
+}
+
+.reveal.visible {
+  animation: fadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.reveal-left.visible {
+  animation: fadeLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.reveal-right.visible {
+  animation: fadeRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.reveal-scale.visible {
+  animation: scaleIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.reveal-zoom.visible {
+  animation: zoomIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* --- Hero Entrance Animations --- */
+.fade-up {
+  animation: fadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.45s; }
+.delay-4 { animation-delay: 0.6s; }
+
+/* --- Typing Cursor --- */
+.hero__typing.typing-active {
+  animation: blink 0.8s step-end infinite;
+}
+
+/* --- Stagger Children --- */
+.stagger-children > * {
+  opacity: 0;
+}
+
+.stagger-children.visible > *:nth-child(1) { animation: fadeUp 0.6s 0.1s forwards; }
+.stagger-children.visible > *:nth-child(2) { animation: fadeUp 0.6s 0.2s forwards; }
+.stagger-children.visible > *:nth-child(3) { animation: fadeUp 0.6s 0.3s forwards; }
+.stagger-children.visible > *:nth-child(4) { animation: fadeUp 0.6s 0.4s forwards; }
+.stagger-children.visible > *:nth-child(5) { animation: fadeUp 0.6s 0.5s forwards; }
+.stagger-children.visible > *:nth-child(6) { animation: fadeUp 0.6s 0.6s forwards; }
+
+/* --- Hover Lift --- */
+.hover-lift {
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* --- Image Zoom on Hover --- */
+.img-zoom {
+  overflow: hidden;
+}
+
+.img-zoom img {
+  transition: transform var(--transition-slow);
+}
+
+.img-zoom:hover img {
+  transform: scale(1.08);
+}
+
+/* --- Page Load Transition --- */
+body {
+  animation: pageTransition 0.5s ease;
+}
+
+body.page-exit {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* --- Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .fade-up {
+    opacity: 1;
+  }
+
+  .clients__track {
+    animation: none;
+  }
+
+  .hero__float-card {
+    animation: none;
+  }
+}
