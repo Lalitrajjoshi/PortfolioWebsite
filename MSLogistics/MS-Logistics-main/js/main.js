@@ -36,7 +36,7 @@
       location: 'Kathmandu, Nepal',
       duration: 'Residential',
       budget: 'Door-to-Door',
-      image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4aea9?w=800&q=80',
+      image: 'images/relocation.svg',
       desc: 'Export-quality packing for a complete household relocation with zero-damage handling. Professional movers carefully packed, transported, and delivered every item across all 77 districts.'
     },
     {
@@ -44,7 +44,7 @@
       location: 'Lalitpur, Nepal',
       duration: 'Commercial',
       budget: 'Asset Tracking',
-      image: 'https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=800&q=80',
+      image: 'images/relocation.svg',
       desc: 'Office relocation with project management and full business-continuity planning. Completed ahead of schedule with GPS-equipped fleet tracking and minimal business disruption.'
     },
     {
@@ -52,7 +52,7 @@
       location: 'Embassy District, Kathmandu',
       duration: 'Diplomatic',
       budget: 'Confidential',
-      image: 'https://images.unsplash.com/photo-1518611012118-696072aa5799?w=800&q=80',
+      image: 'images/relocation.svg',
       desc: 'Protocol-aware embassy relocation with direct customs links and discreet handling. Every item arrived without a single scratch, trusted by diplomatic missions for confidential moves.'
     },
     {
@@ -60,7 +60,7 @@
       location: 'Tribhuvan International Airport',
       duration: 'Freight',
       budget: 'Global Air',
-      image: 'https://images.unsplash.com/photo-1494412519320-aa313df5f8f7?w=800&q=80',
+      image: 'images/freight.svg',
       desc: 'Global air freight routing via TIA with real-time coordination and customs clearance. Multi-modal freight network connecting Nepal to international destinations with zero-damage commitment.'
     },
     {
@@ -68,7 +68,7 @@
       location: 'Balkumari, Lalitpur',
       duration: 'Warehousing',
       budget: '24/7 Security',
-      image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
+      image: 'images/warehouse.svg',
       desc: 'Climate-controlled, GPS-monitored warehousing with full inventory tracking. Secure storage hub providing complete peace of mind for household and commercial goods.'
     },
     {
@@ -76,7 +76,7 @@
       location: 'Kolkata & Haldia Ports',
       duration: 'International',
       budget: 'Sea Freight',
-      image: 'https://images.unsplash.com/photo-1577416419506-3f0e1f9d4f8e?w=800&q=80',
+      image: 'images/freight.svg',
       desc: 'Multi-modal ocean freight via Kolkata and Haldia ports with cross-border customs integration. Seamless international shipping with direct customs links and zero-damage standard.'
     }
   ];
