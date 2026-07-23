@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title description">
+  <title id="title">Secure logistics warehouse</title>
+  <desc id="description">An organised warehouse with shelves, packages, and a forklift.</desc>
+  <defs><linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e7f1ec"/><stop offset="1" stop-color="#a9c9b9"/></linearGradient><linearGradient id="floor" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#759786"/><stop offset="1" stop-color="#507566"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#wall)"/>
+  <path d="M0 600 1200 520v280H0Z" fill="url(#floor)"/>
+  <g stroke="#487161" stroke-width="18" fill="none"><path d="M115 90v510M390 90v490M685 90v465M1015 90v445"/><path d="M85 180h340M85 330h340M85 480h340M650 180h395M650 330h395M650 480h395"/></g>
+  <g fill="#d9a35e" stroke="#8d5e34" stroke-width="5"><rect x="135" y="110" width="115" height="65"/><rect x="268" y="110" width="110" height="65"/><rect x="132" y="255" width="155" height="70"/><rect x="305" y="255" width="76" height="70"/><rect x="130" y="405" width="95" height="70"/><rect x="245" y="405" width="135" height="70"/><rect x="685" y="110" width="145" height="65"/><rect x="850" y="110" width="130" height="65"/><rect x="680" y="255" width="100" height="70"/><rect x="800" y="255" width="180" height="70"/><rect x="680" y="405" width="145" height="70"/><rect x="845" y="405" width="135" height="70"/></g>
+  <path d="M410 520h210v80H480v-45h-70Z" fill="#1f6d45"/><path d="M620 470h90l70 80v50H620Z" fill="#2a8c61"/><rect x="650" y="490" width="45" height="35" rx="4" fill="#d9f0e5"/>
+  <circle cx="475" cy="635" r="40" fill="#22312b"/><circle cx="475" cy="635" r="18" fill="#dceae3"/><circle cx="700" cy="635" r="40" fill="#22312b"/><circle cx="700" cy="635" r="18" fill="#dceae3"/>
+  <path d="M757 470v-160h110v17h-92v143Z" fill="#e2a73f"/><path d="M867 310h160v18H867Z" fill="#e2a73f"/><path d="M1008 328v145h-18V328Z" fill="#e2a73f"/>
+</svg>
